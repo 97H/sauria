@@ -1,0 +1,29 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mac_unit
+Version: V-2023.12-SP5
+Date   : Wed Sep 24 08:50:08 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   mac_unit                     0.00        1151.88       -1151.88  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   mac_unit                     0.00       41191764.00    -41191764.00
+                                                                    (VIOLATED)
+
+
+1

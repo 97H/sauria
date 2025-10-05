@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : sa_processing_element
+Version: V-2023.12-SP5
+Date   : Sun Oct  5 07:54:02 2025
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db)
+
+Number of ports:                          164
+Number of nets:                           531
+Number of cells:                          448
+Number of combinational cells:            366
+Number of sequential cells:                81
+Number of macros/black boxes:               0
+Number of buf/inv:                        122
+Number of references:                      13
+
+Combinational area:                 76.529665
+Buf/Inv area:                       28.164096
+Noncombinational area:             102.236156
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   178.765822
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

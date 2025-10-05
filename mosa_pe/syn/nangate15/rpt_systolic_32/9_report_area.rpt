@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mac_unit
+Version: V-2023.12-SP5
+Date   : Wed Sep 24 08:43:42 2025
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db)
+
+Number of ports:                          162
+Number of nets:                          1939
+Number of cells:                         1619
+Number of combinational cells:           1522
+Number of sequential cells:                96
+Number of macros/black boxes:               0
+Number of buf/inv:                        278
+Number of references:                      15
+
+Combinational area:                632.242190
+Buf/Inv area:                       44.531713
+Noncombinational area:             122.683388
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   754.925578
+Total area:                 undefined
+1

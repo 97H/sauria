@@ -1,0 +1,171 @@
+# TclPro::Compiler::Include
+
+if {[catch {package require tbcload 1.6} err] == 1} {
+    return -code error "[info script]: The TclPro ByteCode Loader is not available or does not support the correct version -- $err"
+}
+tbcload::bceval {
+TclPro ByteCode 2 0 1.7 8.6
+1 0 11 5 0 0 8 0 4 1 1 -1 -1
+11
+(<E<!(H&s!+-!!
+1
+z
+1
++!
+5
+x
+4
+,CHr@
+x
+12
+?C'q6EKjS?w&MEF
+x
+49
+U|ocB5rx#6i#:@+:<@iBn>#j@(CuSA'<XeD6eD%G4LVE+;KTfD8&ufArZMTAIv
+p
+46 0 496 20 0 1 204 0 5 46 50 -1 -1
+496
+Ubn-!D|.6,Q';`f5v!!!.!!!!4hDH&L5v!!UO9,!8VG#!#0E<!/5C3w-l4pv=.WH&AN2,!8V
+G#!#0E<!/5C3w.l4pv=.WH&BN2,!8VG#!#0E<!/5C3w.r=pv=.WH&CN2,!8VG#!#0E<!/5C3
+w/r=pv=.WH&DN2,!8VG#!#0E<!/5C3w/#Gpv=.WH&EN2,!8VG#!#0E<!/5C3w0#Gpv=.WH&F
+N2,!Z#('!,,:3ws*iI/v/wpv2/YQ#5/o9v8^w!!.H!!!-/:3wQVe`B-8giwv*<<!Ulho+4,,
+t!5v!!!Z!!!!A1@4wUY-4.5Ppiw4;tl#BJe`B.A-0%v*<<!EC@S#8^w!!-E!!!4SUR#HSa<!
+CN2,!)Ro*!#0E<!G(x4w+NW<!G(x4wX1ZH/-1nf%E(3-&=kMH&0KW<!E/B=!=NE<!@lJs!5v
+!!!.!!!!F*>J&f-*?!<J>>!9;kpv<N2,!.oAv!#0E<!gkv7,/KQf@5v!!!8!!!!%3E<!0TN<
+!3&5pv@Pos!5v!!!8!!!!%3E<!1ZW<!3&5pvAV#t!D1qm#=;'v!>P5Uv>.d4wF4m4w:k^qv=
+N2,!.oAv!#0E<!gkv7,(`46#D_e`B-8giwv*<<!39!!!
+46
+HXdn#;;TX!Fh?0%Bq6n#;;TX!WgWL%xgWL%N%@OwUx*PwKh?0%F@N1%C`!
+50
+v-<<!6HBlwUOhR#eNL^(Y6BlwUOhR#+Y<kw+Y<kwF5!1%SU<1%eNL^(ORN1%:E!
+20
+x
+5
+:Ugb1Y!
+x
+12
+fy^|3cnhc<tf_TA
+x
+12
+fy^|3nbT,EN*Z8A
+x
+9
+w&MEFQd,<@9v
+x
+9
+w&MEFPl&(F?v
+x
+7
+w&MEFAd2-
+x
+15
+_h^|3vtY8Aent)FOef+
+x
+55
+U&+mB(+ME+4sRQB.K..DjBUU@:u>0A)TB3@2MNBD1ZB3@6;hAGqVtfA/TB3@0o00Di*E-
+x
+9
+H_G%G,c5DFEv
+x
+7
+009KD`1w,
+x
+5
+s85)F1v
+x
+0
+
+x
+62
+U&+mB(+ME+4sRQBucbnAo?DTAe81p58aVE+Pl&(F3)^aE/y-fD.HegC/'rTA&,:eDvCUU@3O
+lSAY+%
+x
+18
+jT219l)fCFQd,<@|@ggCQSw
+x
+4
+#^<JD
+x
+18
+jT219#NfCFQd,<@|@ggCQSw
+x
+1
+R!
+x
+1
+Q!
+x
+4
+8w`TA
+x
+63
+U&+mB(+ME+4sRQBucbnAo?DTA=%OBD*ntD+*7pV@%TB3@2MNBD1ZB3@6;hAGqVtfA/TB3@0o
+00Di*E-
+0
+1
+J
+3
+10
+1
+R!
+28
+1
+S!
+386
+1
+T!
+8 15
+2
+!<#
+0 0 256
+2
+v?#
+1 0 256
+2
+(<#
+2 0 256
+2
+)?#
+3 0 256
+6
+:<@iB@Sw
+4 0 256
+10
+&BjJDrimlBTnw
+5 0 256
+5
+&!nID@v
+6 0 256
+5
+5;2`F<v
+7 1 256
+x
+5
+s85)F1v
+6
+7,V`FW+%
+8 0 0
+6
+qd,<@%<#
+9 0 0
+6
+qd,<@&?#
+10 0 0
+6
+pl&(F+<#
+11 0 0
+6
+pl&(F,?#
+12 0 0
+4
+Mxp#6
+13 0 0
+4
+Nd6?6
+14 0 0
+x
+15
+rpwhC;Z2b3<?<+EfqT+
+0
+0
+}

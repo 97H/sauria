@@ -1,0 +1,2 @@
+rm -f ./pycell2.zip
+zip -r ./pycell2.zip ./pycell2

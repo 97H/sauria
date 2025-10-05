@@ -1,0 +1,226 @@
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 1%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 209 GB, Tmp Disk Free: 61 GB
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.5 |     *     |
+| Licensed DW Building Blocks        | V-2023.12-DWBB_202312.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 170                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 128                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 5                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 22                                     |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'mac_unit'
+
+Loaded alib file './alib-52/NanGate_15nm_OCL.db.alib'
+CPU Load: 1%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 209 GB, Tmp Disk Free: 61 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mac_unit'
+ Implement Synthetic for 'mac_unit'.
+CPU Load: 1%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 209 GB, Tmp Disk Free: 61 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'mac_unit'. (DDB-72)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    1282.6      0.00       0.0      23.0                           52264252.0000
+    0:00:05    1248.2      0.00       0.0      20.0                           50725816.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+    0:00:06    1151.6      0.00       0.0      20.0                           41526048.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    1151.4      0.00       0.0      20.0                           41502940.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:06    1152.0      0.00       0.0       0.0                           41533752.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           41533752.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           41533752.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           41533752.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           41533752.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1152.0      0.00       0.0       0.0                           40983760.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+    0:00:06    1151.9      0.00       0.0       0.0                           40976056.0000
+CPU Load: 2%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 209 GB, Tmp Disk Free: 61 GB
+Loading db file '/home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 2%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 209 GB, Tmp Disk Free: 61 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

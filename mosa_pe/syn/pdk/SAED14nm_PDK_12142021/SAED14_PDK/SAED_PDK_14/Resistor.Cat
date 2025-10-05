@@ -1,0 +1,6 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+SAED_PDK_14/rnpoly type="cell"
+SAED_PDK_14/rnpoly_wos type="cell"
+SAED_PDK_14/rppoly type="cell"
+SAED_PDK_14/rppoly_wos type="cell"

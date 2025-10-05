@@ -12,22 +12,22 @@ module sa_processing_element #(
     parameter INTERMEDIATE_PIPELINE_STAGE = 1
 )(
     // Clk, RST
-    input logic                 i_clk,
-    input logic                 i_rstn,
+    input logic                 clk,
+    input logic                 rst_n,
 
     // Data Inputs
-    input  logic [IA_W-1:0]     i_a,    // Activation operand
-    input  logic [IB_W-1:0]     i_b,    // Weight operand
-    input  logic [OC_W-1:0]     i_c,    // MAC input (preload / out chain)
+    input  logic [IA_W-1:0]     a,    // Activation operand
+    input  logic [IB_W-1:0]     b,    // Weight operand
+    input  logic [OC_W-1:0]     c,    // MAC input (preload / out chain)
 
     // Control Inputs
-    input logic                 i_reg_clear,    // Register clear
-    input logic                 i_pipeline_en,  // Global pipeline enable (for stalls)
+    input logic                 reg_clear,    // Register clear
+    input logic                 pipeline_en,  // Global pipeline enable (for stalls)
 
     // Data Outputs
-    output logic [IA_W-1:0]     o_a,            // Activation output
-    output logic [IB_W-1:0]     o_b,            // Weight output
-    output logic [OC_W-1:0]     o_c             // MAC output (preload / out chain)
+    output logic [IA_W-1:0]     a_out,            // Activation output
+    output logic [IB_W-1:0]     b_out,            // Weight output
+    output logic [OC_W-1:0]     c_out             // MAC output (preload / out chain)
 );
 
 // ----------
@@ -48,7 +48,7 @@ logic [OC_W-1:0] mac_d, mac_q;
 // Control
 // ----------
 
-assign pipeline_ff_en = i_pipeline_en;
+assign pipeline_ff_en = pipeline_en;
 
 // -------------------
 // Computation Units
@@ -67,10 +67,10 @@ fma_wrapper #(
     .ZERO_GATING_MULT(0),
     .FP_W(IA_W)
 ) fma_i (
-    .i_clk          (i_clk),
-    .i_rstn         (i_rstn && (!i_reg_clear)),
-    .i_a            (i_a),
-    .i_b            (i_b),
+    .i_clk          (clk),
+    .i_rstn         (rst_n && (!reg_clear)),
+    .i_a            (a),
+    .i_b            (b),
     .i_c            (mac_q),
     .i_msel         (1'b0),
     .i_pipeline_en  (pipeline_ff_en),
@@ -82,12 +82,12 @@ fma_wrapper #(
 // Local Accumulator (Output Stationary)
 // --------------------------------------
 
-always_ff @(posedge i_clk or negedge i_rstn) begin : acc_reg
-    if(~i_rstn) begin
+always_ff @(posedge clk or negedge rst_n) begin : acc_reg
+    if(~rst_n) begin
         mac_q <= 0;
     end else begin
         // Synchronous reset
-        if (i_reg_clear) begin
+        if (reg_clear) begin
             mac_q <= 0;
         end else if(pipeline_ff_en) begin
             mac_q <= mac_d;
@@ -100,18 +100,18 @@ end
 // Propagation Pipeline Registers
 // -------------------------------
 
-always_ff @(posedge i_clk or negedge i_rstn) begin : prop_reg
-    if(~i_rstn) begin
+always_ff @(posedge clk or negedge rst_n) begin : prop_reg
+    if(~rst_n) begin
         a_q <= 0;
         b_q <= 0;
     end else begin
         // Synchronous reset
-        if (i_reg_clear) begin
+        if (reg_clear) begin
             a_q <= 0;
             b_q <= 0;
         end else if(pipeline_ff_en) begin
-            a_q <= i_a;
-            b_q <= i_b;
+            a_q <= a;
+            b_q <= b;
         end
     end
 end
@@ -121,8 +121,8 @@ end
 // Outputs
 // -------------------
 
-assign o_a = a_q;
-assign o_b = b_q;
-assign o_c = mac_q;
+assign a_out = a_q;
+assign b_out = b_q;
+assign c_out = mac_q;
 
 endmodule

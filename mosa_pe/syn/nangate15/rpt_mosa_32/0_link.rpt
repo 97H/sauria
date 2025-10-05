@@ -1,0 +1,9 @@
+
+  Linking design 'mac_unit'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  mac_unit                    /home/csarch/workspace/MOSA_RTL/syn/mac_unit.db
+  NanGate_15nm_OCL (library)  /home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db
+  dw_foundation.sldb (library) /home/csarch/tools/syn/V-2023.12-SP5/libraries/syn/dw_foundation.sldb
+
+1

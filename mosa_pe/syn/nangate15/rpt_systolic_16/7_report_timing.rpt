@@ -1,0 +1,285 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mac_unit
+Version: V-2023.12-SP5
+Date   : Tue Sep 23 02:27:04 2025
+****************************************
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: x_new[1] (input port clocked by MAIN_CLOCK)
+  Endpoint: pe_val[31] (output port clocked by MAIN_CLOCK)
+  Path Group: COMBO
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     0.10       0.60 r
+  x_new[1] (in)                            0.00       0.60 r
+  U136/ZN (INV_X1)                         2.98       3.58 f
+  U137/ZN (INV_X1)                         9.15      12.73 r
+  U326/ZN (NOR2_X1)                        4.78      17.51 f
+  U327/ZN (NOR2_X1)                        5.92      23.42 r
+  U340/ZN (NAND2_X1)                      19.80      43.23 f
+  U341/ZN (AOI22_X1)                       7.71      50.94 r
+  U342/ZN (NOR2_X1)                        3.61      54.55 f
+  U356/S (FA_X1)                          14.16      68.71 r
+  U343/ZN (INV_X1)                         2.22      70.94 f
+  intadd_0/U28/S (FA_X1)                  13.78      84.71 r
+  U332/ZN (INV_X1)                         2.53      87.24 f
+  intadd_19/U2/CO (FA_X1)                  7.27      94.51 f
+  U323/ZN (INV_X1)                         2.58      97.10 r
+  intadd_0/U27/CO (FA_X1)                  9.44     106.53 r
+  intadd_0/U26/CO (FA_X1)                  8.90     115.43 r
+  intadd_0/U25/CO (FA_X1)                  8.90     124.33 r
+  intadd_0/U24/CO (FA_X1)                  8.90     133.23 r
+  intadd_0/U23/CO (FA_X1)                  8.90     142.12 r
+  intadd_0/U22/CO (FA_X1)                  8.90     151.02 r
+  intadd_0/U21/CO (FA_X1)                  8.90     159.92 r
+  intadd_0/U20/CO (FA_X1)                  8.90     168.82 r
+  intadd_0/U19/CO (FA_X1)                  8.90     177.72 r
+  intadd_0/U18/CO (FA_X1)                  8.90     186.61 r
+  intadd_0/U17/CO (FA_X1)                  8.90     195.51 r
+  intadd_0/U16/CO (FA_X1)                  8.90     204.41 r
+  intadd_0/U15/CO (FA_X1)                  8.90     213.31 r
+  intadd_0/U14/CO (FA_X1)                  8.90     222.21 r
+  intadd_0/U13/CO (FA_X1)                  8.90     231.10 r
+  intadd_0/U12/CO (FA_X1)                  8.90     240.00 r
+  intadd_0/U11/CO (FA_X1)                  8.90     248.90 r
+  intadd_0/U10/CO (FA_X1)                  8.90     257.80 r
+  intadd_0/U9/CO (FA_X1)                   8.90     266.70 r
+  intadd_0/U8/CO (FA_X1)                   8.90     275.59 r
+  intadd_0/U7/CO (FA_X1)                   8.90     284.49 r
+  intadd_0/U6/CO (FA_X1)                   8.90     293.39 r
+  intadd_0/U5/CO (FA_X1)                   8.90     302.29 r
+  intadd_0/U4/CO (FA_X1)                   8.90     311.18 r
+  intadd_0/U3/CO (FA_X1)                   8.90     320.08 r
+  intadd_0/U2/CO (FA_X1)                   9.15     329.24 r
+  U295/Z (XOR2_X1)                         5.94     335.18 r
+  U297/Z (XOR2_X1)                         6.10     341.28 r
+  U320/ZN (XNOR2_X1)                       8.07     349.35 f
+  U321/ZN (INV_X1)                         1.62     350.97 r
+  pe_val[31] (out)                         0.00     350.97 r
+  data arrival time                                 350.97
+
+  clock MAIN_CLOCK (rise edge)          1000.00    1000.00
+  clock network delay (ideal)              0.50    1000.50
+  clock uncertainty                       -0.30    1000.20
+  output external delay                   -0.10    1000.10
+  data required time                               1000.10
+  -----------------------------------------------------------
+  data required time                               1000.10
+  data arrival time                                -350.97
+  -----------------------------------------------------------
+  slack (MET)                                       649.13
+
+
+  Startpoint: partial_sum_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: partial_sum_reg_reg[31]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  partial_sum_reg_reg[4]/CLK (DFFSNQ_X1)                  0.00       0.50 r
+  partial_sum_reg_reg[4]/Q (DFFSNQ_X1)                    9.52      10.02 r
+  U333/ZN (INV_X1)                                        2.25      12.27 f
+  U356/S (FA_X1)                                         13.41      25.68 r
+  U343/ZN (INV_X1)                                        2.22      27.91 f
+  intadd_0/U28/S (FA_X1)                                 13.78      41.68 r
+  U332/ZN (INV_X1)                                        2.53      44.21 f
+  intadd_19/U2/CO (FA_X1)                                 7.27      51.48 f
+  U323/ZN (INV_X1)                                        2.58      54.07 r
+  intadd_0/U27/CO (FA_X1)                                 9.44      63.50 r
+  intadd_0/U26/CO (FA_X1)                                 8.90      72.40 r
+  intadd_0/U25/CO (FA_X1)                                 8.90      81.30 r
+  intadd_0/U24/CO (FA_X1)                                 8.90      90.20 r
+  intadd_0/U23/CO (FA_X1)                                 8.90      99.09 r
+  intadd_0/U22/CO (FA_X1)                                 8.90     107.99 r
+  intadd_0/U21/CO (FA_X1)                                 8.90     116.89 r
+  intadd_0/U20/CO (FA_X1)                                 8.90     125.79 r
+  intadd_0/U19/CO (FA_X1)                                 8.90     134.69 r
+  intadd_0/U18/CO (FA_X1)                                 8.90     143.58 r
+  intadd_0/U17/CO (FA_X1)                                 8.90     152.48 r
+  intadd_0/U16/CO (FA_X1)                                 8.90     161.38 r
+  intadd_0/U15/CO (FA_X1)                                 8.90     170.28 r
+  intadd_0/U14/CO (FA_X1)                                 8.90     179.18 r
+  intadd_0/U13/CO (FA_X1)                                 8.90     188.07 r
+  intadd_0/U12/CO (FA_X1)                                 8.90     196.97 r
+  intadd_0/U11/CO (FA_X1)                                 8.90     205.87 r
+  intadd_0/U10/CO (FA_X1)                                 8.90     214.77 r
+  intadd_0/U9/CO (FA_X1)                                  8.90     223.67 r
+  intadd_0/U8/CO (FA_X1)                                  8.90     232.56 r
+  intadd_0/U7/CO (FA_X1)                                  8.90     241.46 r
+  intadd_0/U6/CO (FA_X1)                                  8.90     250.36 r
+  intadd_0/U5/CO (FA_X1)                                  8.90     259.26 r
+  intadd_0/U4/CO (FA_X1)                                  8.90     268.15 r
+  intadd_0/U3/CO (FA_X1)                                  8.90     277.05 r
+  intadd_0/U2/CO (FA_X1)                                  9.15     286.21 r
+  U295/Z (XOR2_X1)                                        5.94     292.15 r
+  U297/Z (XOR2_X1)                                        6.10     298.25 r
+  U320/ZN (XNOR2_X1)                                      8.07     306.32 f
+  U322/ZN (NOR2_X1)                                       2.66     308.98 r
+  partial_sum_reg_reg[31]/D (DFFSNQ_X1)                   0.00     308.98 r
+  data arrival time                                                308.98
+
+  clock MAIN_CLOCK (rise edge)                         1000.00    1000.00
+  clock network delay (ideal)                             0.50    1000.50
+  clock uncertainty                                      -0.30    1000.20
+  partial_sum_reg_reg[31]/CLK (DFFSNQ_X1)                 0.00    1000.20 r
+  library setup time                                     -8.67     991.53
+  data required time                                               991.53
+  --------------------------------------------------------------------------
+  data required time                                               991.53
+  data arrival time                                               -308.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                      682.55
+
+
+  Startpoint: x_new[1] (input port clocked by MAIN_CLOCK)
+  Endpoint: partial_sum_reg_reg[31]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    0.10       0.60 r
+  x_new[1] (in)                                           0.00       0.60 r
+  U136/ZN (INV_X1)                                        2.98       3.58 f
+  U137/ZN (INV_X1)                                        9.15      12.73 r
+  U326/ZN (NOR2_X1)                                       4.78      17.51 f
+  U327/ZN (NOR2_X1)                                       5.92      23.42 r
+  U340/ZN (NAND2_X1)                                     19.80      43.23 f
+  U341/ZN (AOI22_X1)                                      7.71      50.94 r
+  U342/ZN (NOR2_X1)                                       3.61      54.55 f
+  U356/S (FA_X1)                                         14.16      68.71 r
+  U343/ZN (INV_X1)                                        2.22      70.94 f
+  intadd_0/U28/S (FA_X1)                                 13.78      84.71 r
+  U332/ZN (INV_X1)                                        2.53      87.24 f
+  intadd_19/U2/CO (FA_X1)                                 7.27      94.51 f
+  U323/ZN (INV_X1)                                        2.58      97.10 r
+  intadd_0/U27/CO (FA_X1)                                 9.44     106.53 r
+  intadd_0/U26/CO (FA_X1)                                 8.90     115.43 r
+  intadd_0/U25/CO (FA_X1)                                 8.90     124.33 r
+  intadd_0/U24/CO (FA_X1)                                 8.90     133.23 r
+  intadd_0/U23/CO (FA_X1)                                 8.90     142.12 r
+  intadd_0/U22/CO (FA_X1)                                 8.90     151.02 r
+  intadd_0/U21/CO (FA_X1)                                 8.90     159.92 r
+  intadd_0/U20/CO (FA_X1)                                 8.90     168.82 r
+  intadd_0/U19/CO (FA_X1)                                 8.90     177.72 r
+  intadd_0/U18/CO (FA_X1)                                 8.90     186.61 r
+  intadd_0/U17/CO (FA_X1)                                 8.90     195.51 r
+  intadd_0/U16/CO (FA_X1)                                 8.90     204.41 r
+  intadd_0/U15/CO (FA_X1)                                 8.90     213.31 r
+  intadd_0/U14/CO (FA_X1)                                 8.90     222.21 r
+  intadd_0/U13/CO (FA_X1)                                 8.90     231.10 r
+  intadd_0/U12/CO (FA_X1)                                 8.90     240.00 r
+  intadd_0/U11/CO (FA_X1)                                 8.90     248.90 r
+  intadd_0/U10/CO (FA_X1)                                 8.90     257.80 r
+  intadd_0/U9/CO (FA_X1)                                  8.90     266.70 r
+  intadd_0/U8/CO (FA_X1)                                  8.90     275.59 r
+  intadd_0/U7/CO (FA_X1)                                  8.90     284.49 r
+  intadd_0/U6/CO (FA_X1)                                  8.90     293.39 r
+  intadd_0/U5/CO (FA_X1)                                  8.90     302.29 r
+  intadd_0/U4/CO (FA_X1)                                  8.90     311.18 r
+  intadd_0/U3/CO (FA_X1)                                  8.90     320.08 r
+  intadd_0/U2/CO (FA_X1)                                  9.15     329.24 r
+  U295/Z (XOR2_X1)                                        5.94     335.18 r
+  U297/Z (XOR2_X1)                                        6.10     341.28 r
+  U320/ZN (XNOR2_X1)                                      8.07     349.35 f
+  U322/ZN (NOR2_X1)                                       2.66     352.01 r
+  partial_sum_reg_reg[31]/D (DFFSNQ_X1)                   0.00     352.01 r
+  data arrival time                                                352.01
+
+  clock MAIN_CLOCK (rise edge)                         1000.00    1000.00
+  clock network delay (ideal)                             0.50    1000.50
+  clock uncertainty                                      -0.30    1000.20
+  partial_sum_reg_reg[31]/CLK (DFFSNQ_X1)                 0.00    1000.20 r
+  library setup time                                     -8.67     991.53
+  data required time                                               991.53
+  --------------------------------------------------------------------------
+  data required time                                               991.53
+  data arrival time                                               -352.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                      639.52
+
+
+  Startpoint: partial_sum_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: pe_val[31] (output port clocked by MAIN_CLOCK)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  partial_sum_reg_reg[4]/CLK (DFFSNQ_X1)                  0.00       0.50 r
+  partial_sum_reg_reg[4]/Q (DFFSNQ_X1)                    9.52      10.02 r
+  U333/ZN (INV_X1)                                        2.25      12.27 f
+  U356/S (FA_X1)                                         13.41      25.68 r
+  U343/ZN (INV_X1)                                        2.22      27.91 f
+  intadd_0/U28/S (FA_X1)                                 13.78      41.68 r
+  U332/ZN (INV_X1)                                        2.53      44.21 f
+  intadd_19/U2/CO (FA_X1)                                 7.27      51.48 f
+  U323/ZN (INV_X1)                                        2.58      54.07 r
+  intadd_0/U27/CO (FA_X1)                                 9.44      63.50 r
+  intadd_0/U26/CO (FA_X1)                                 8.90      72.40 r
+  intadd_0/U25/CO (FA_X1)                                 8.90      81.30 r
+  intadd_0/U24/CO (FA_X1)                                 8.90      90.20 r
+  intadd_0/U23/CO (FA_X1)                                 8.90      99.09 r
+  intadd_0/U22/CO (FA_X1)                                 8.90     107.99 r
+  intadd_0/U21/CO (FA_X1)                                 8.90     116.89 r
+  intadd_0/U20/CO (FA_X1)                                 8.90     125.79 r
+  intadd_0/U19/CO (FA_X1)                                 8.90     134.69 r
+  intadd_0/U18/CO (FA_X1)                                 8.90     143.58 r
+  intadd_0/U17/CO (FA_X1)                                 8.90     152.48 r
+  intadd_0/U16/CO (FA_X1)                                 8.90     161.38 r
+  intadd_0/U15/CO (FA_X1)                                 8.90     170.28 r
+  intadd_0/U14/CO (FA_X1)                                 8.90     179.18 r
+  intadd_0/U13/CO (FA_X1)                                 8.90     188.07 r
+  intadd_0/U12/CO (FA_X1)                                 8.90     196.97 r
+  intadd_0/U11/CO (FA_X1)                                 8.90     205.87 r
+  intadd_0/U10/CO (FA_X1)                                 8.90     214.77 r
+  intadd_0/U9/CO (FA_X1)                                  8.90     223.67 r
+  intadd_0/U8/CO (FA_X1)                                  8.90     232.56 r
+  intadd_0/U7/CO (FA_X1)                                  8.90     241.46 r
+  intadd_0/U6/CO (FA_X1)                                  8.90     250.36 r
+  intadd_0/U5/CO (FA_X1)                                  8.90     259.26 r
+  intadd_0/U4/CO (FA_X1)                                  8.90     268.15 r
+  intadd_0/U3/CO (FA_X1)                                  8.90     277.05 r
+  intadd_0/U2/CO (FA_X1)                                  9.15     286.21 r
+  U295/Z (XOR2_X1)                                        5.94     292.15 r
+  U297/Z (XOR2_X1)                                        6.10     298.25 r
+  U320/ZN (XNOR2_X1)                                      8.07     306.32 f
+  U321/ZN (INV_X1)                                        1.62     307.94 r
+  pe_val[31] (out)                                        0.00     307.94 r
+  data arrival time                                                307.94
+
+  clock MAIN_CLOCK (rise edge)                         1000.00    1000.00
+  clock network delay (ideal)                             0.50    1000.50
+  clock uncertainty                                      -0.30    1000.20
+  output external delay                                  -0.10    1000.10
+  data required time                                              1000.10
+  --------------------------------------------------------------------------
+  data required time                                              1000.10
+  data arrival time                                               -307.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                      692.16
+
+
+1
