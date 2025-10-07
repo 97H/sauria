@@ -1,0 +1,360 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sa_processing_element
+Version: V-2023.12-SP5
+Date   : Tue Oct  7 01:33:23 2025
+****************************************
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: mac_q_reg[5]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: mac_q_reg[14]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  mac_q_reg[5]/CLK (DFFRNQ_X1)                            0.00       0.50 r
+  mac_q_reg[5]/Q (DFFRNQ_X1)                             10.39      10.89 f
+  U295/ZN (INV_X1)                                        4.92      15.81 r
+  U312/ZN (OAI21_X2)                                      3.49      19.30 f
+  fma_i/i_a[5] (fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16)
+                                                          0.00      19.30 f
+  fma_i/fma_i/operands_i[0][5] (fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0)
+                                                          0.00      19.30 f
+  fma_i/fma_i/U144/Z (BUF_X4)                             7.81      27.12 f
+  fma_i/fma_i/i_class_inputs/operands_i[0][5] (fpnew_classifier_2_3)
+                                                          0.00      27.12 f
+  fma_i/fma_i/i_class_inputs/U5/Z (OR4_X1)                9.26      36.38 f
+  fma_i/fma_i/i_class_inputs/U2/ZN (NOR4_X2)              5.99      42.36 r
+  fma_i/fma_i/i_class_inputs/info_o[0][is_zero] (fpnew_classifier_2_3)
+                                                          0.00      42.36 r
+  fma_i/fma_i/U281/ZN (NOR2_X2)                           6.12      48.48 f
+  fma_i/fma_i/U263/ZN (NAND2_X1)                          3.79      52.27 r
+  fma_i/fma_i/U261/ZN (NAND2_X1)                          4.81      57.08 f
+  fma_i/fma_i/U59/ZN (INV_X1)                             2.72      59.80 r
+  fma_i/fma_i/U56/ZN (OAI21_X1)                           3.10      62.89 f
+  fma_i/fma_i/U337/CO (FA_X1)                             9.87      72.76 f
+  fma_i/fma_i/U157/ZN (NAND2_X2)                          2.69      75.45 r
+  fma_i/fma_i/U156/ZN (NAND2_X2)                          3.50      78.95 f
+  fma_i/fma_i/U153/ZN (NAND2_X2)                          2.46      81.42 r
+  fma_i/fma_i/U152/ZN (NAND2_X2)                          2.88      84.30 f
+  fma_i/fma_i/U112/ZN (NAND2_X1)                          2.33      86.63 r
+  fma_i/fma_i/U258/ZN (NAND2_X1)                          3.13      89.76 f
+  fma_i/fma_i/U351/Z (XOR2_X1)                            6.68      96.43 f
+  fma_i/fma_i/U352/Z (AND2_X2)                            7.18     103.61 f
+  fma_i/fma_i/U81/ZN (NOR2_X2)                            6.95     110.56 r
+  fma_i/fma_i/U106/ZN (NAND2_X2)                          4.73     115.29 f
+  fma_i/fma_i/U120/ZN (INV_X2)                            3.81     119.10 r
+  fma_i/fma_i/U254/ZN (NAND2_X1)                          9.30     128.40 f
+  fma_i/fma_i/U114/ZN (INV_X2)                            5.01     133.41 r
+  fma_i/fma_i/U113/ZN (NAND2_X1)                          4.37     137.78 f
+  fma_i/fma_i/U159/ZN (NAND3_X2)                          4.08     141.86 r
+  fma_i/fma_i/U429/ZN (INV_X1)                            2.92     144.78 f
+  fma_i/fma_i/U430/ZN (AOI21_X1)                          3.07     147.85 r
+  fma_i/fma_i/U158/ZN (NAND3_X1)                          6.76     154.61 f
+  fma_i/fma_i/U433/Z (AND2_X1)                            4.88     159.49 f
+  fma_i/fma_i/U91/ZN (NAND3_X1)                           2.55     162.04 r
+  fma_i/fma_i/U443/ZN (NOR2_X1)                           2.15     164.19 f
+  fma_i/fma_i/U447/ZN (NOR2_X1)                           5.75     169.94 r
+  fma_i/fma_i/U160/ZN (NOR2_X2)                           2.77     172.70 f
+  fma_i/fma_i/adder_i/i_carry (adder_generic_0_0_0_00000025_00000026)
+                                                          0.00     172.70 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/i_carry (adder_ideal_00000025_00000026)
+                                                          0.00     172.70 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/U387/ZN (INV_X1)
+                                                          2.55     175.25 r
+  fma_i/fma_i/adder_i/genblk1.adder_i/U388/ZN (XNOR2_X1)
+                                                          9.71     184.96 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/o_c[0] (adder_ideal_00000025_00000026)
+                                                          0.00     184.96 f
+  fma_i/fma_i/adder_i/o_c[0] (adder_generic_0_0_0_00000025_00000026)
+                                                          0.00     184.96 f
+  fma_i/fma_i/U172/ZN (INV_X2)                            3.43     188.39 r
+  fma_i/fma_i/U69/ZN (NAND2_X2)                           3.69     192.08 f
+  fma_i/fma_i/U168/ZN (NOR2_X2)                           4.55     196.63 r
+  fma_i/fma_i/U87/ZN (NAND2_X2)                           4.38     201.01 f
+  fma_i/fma_i/U171/ZN (NOR2_X2)                           3.74     204.76 r
+  fma_i/fma_i/U133/Z (AND2_X2)                            6.63     211.39 r
+  fma_i/fma_i/U183/ZN (NAND2_X2)                          3.38     214.76 f
+  fma_i/fma_i/U182/ZN (NOR2_X2)                           3.45     218.21 r
+  fma_i/fma_i/U136/Z (AND2_X2)                            6.73     224.94 r
+  fma_i/fma_i/U167/ZN (NAND2_X2)                          3.38     228.32 f
+  fma_i/fma_i/U166/ZN (NOR2_X2)                           3.51     231.83 r
+  fma_i/fma_i/U134/Z (AND2_X2)                            6.53     238.36 r
+  fma_i/fma_i/U170/ZN (NAND2_X2)                          3.38     241.74 f
+  fma_i/fma_i/U169/ZN (NOR2_X2)                           3.51     245.25 r
+  fma_i/fma_i/U135/Z (AND2_X2)                            6.53     251.78 r
+  fma_i/fma_i/U174/ZN (NAND2_X2)                          3.38     255.16 f
+  fma_i/fma_i/U173/ZN (NOR2_X2)                           4.10     259.26 r
+  fma_i/fma_i/U176/ZN (NAND2_X2)                          3.81     263.07 f
+  fma_i/fma_i/U175/ZN (NOR2_X2)                           4.36     267.42 r
+  fma_i/fma_i/U165/ZN (NAND2_X2)                          3.91     271.34 f
+  fma_i/fma_i/U164/ZN (NOR2_X2)                           3.55     274.89 r
+  fma_i/fma_i/U463/Z (AND2_X1)                            5.88     280.77 r
+  fma_i/fma_i/U543/Z (AND2_X1)                            5.87     286.64 r
+  fma_i/fma_i/U545/Z (XOR2_X1)                            5.34     291.98 r
+  fma_i/fma_i/U546/Z (MUX2_X1)                            8.29     300.27 r
+  fma_i/fma_i/i_lzc/in_i[24] (lzc_00000019_1)             0.00     300.27 r
+  fma_i/fma_i/i_lzc/U22/Z (OR2_X1)                        6.18     306.45 r
+  fma_i/fma_i/i_lzc/U23/ZN (NOR2_X2)                      2.86     309.31 f
+  fma_i/fma_i/i_lzc/U25/ZN (NAND2_X2)                     3.76     313.08 r
+  fma_i/fma_i/i_lzc/U13/ZN (NOR2_X2)                      3.25     316.33 f
+  fma_i/fma_i/i_lzc/U27/ZN (NAND2_X2)                     4.51     320.84 r
+  fma_i/fma_i/i_lzc/U11/ZN (NOR2_X2)                      3.84     324.67 f
+  fma_i/fma_i/i_lzc/U5/ZN (INV_X2)                        2.94     327.61 r
+  fma_i/fma_i/i_lzc/U14/ZN (OAI21_X1)                     6.08     333.69 f
+  fma_i/fma_i/i_lzc/cnt_o[4] (lzc_00000019_1)             0.00     333.69 f
+  fma_i/fma_i/U605/Z (XOR2_X1)                            7.04     340.73 f
+  fma_i/fma_i/U22/ZN (NOR2_X1)                            6.31     347.04 r
+  fma_i/fma_i/U236/ZN (OAI21_X1)                          4.31     351.36 f
+  fma_i/fma_i/U235/ZN (AOI21_X1)                          4.38     355.73 r
+  fma_i/fma_i/U619/ZN (OAI21_X1)                          3.18     358.92 f
+  fma_i/fma_i/U96/Z (AND2_X2)                             5.29     364.21 f
+  fma_i/fma_i/U185/ZN (NAND2_X2)                          3.78     367.99 r
+  fma_i/fma_i/U105/ZN (INV_X4)                            2.78     370.76 f
+  fma_i/fma_i/U147/ZN (AOI21_X2)                          3.19     373.95 r
+  fma_i/fma_i/U44/ZN (OAI21_X2)                           5.71     379.66 f
+  fma_i/fma_i/U19/Z (BUF_X4)                              8.26     387.93 f
+  fma_i/fma_i/U641/ZN (NAND2_X2)                          5.77     393.69 r
+  fma_i/fma_i/U223/ZN (INV_X2)                            5.05     398.75 f
+  fma_i/fma_i/U272/ZN (NAND2_X1)                          3.70     402.45 r
+  fma_i/fma_i/U195/ZN (NAND4_X2)                          7.21     409.65 f
+  fma_i/fma_i/U767/ZN (AOI22_X1)                          5.18     414.83 r
+  fma_i/fma_i/U213/ZN (NAND2_X1)                          4.33     419.16 f
+  fma_i/fma_i/U89/Z (AND2_X1)                             4.65     423.81 f
+  fma_i/fma_i/U88/ZN (NOR2_X2)                            3.64     427.44 r
+  fma_i/fma_i/U146/ZN (INV_X2)                            2.49     429.93 f
+  fma_i/fma_i/U186/ZN (NOR2_X2)                           4.33     434.26 r
+  fma_i/fma_i/U49/ZN (NAND2_X2)                           3.15     437.41 f
+  fma_i/fma_i/U48/ZN (INV_X2)                             4.92     442.33 r
+  fma_i/fma_i/U82/Z (BUF_X2)                              5.85     448.18 r
+  fma_i/fma_i/U1072/ZN (AOI22_X1)                         2.93     451.11 f
+  fma_i/fma_i/U1073/ZN (OAI21_X1)                         6.63     457.74 r
+  fma_i/fma_i/i_fpnew_rounding/abs_value_i[7] (fpnew_rounding_0000000f)
+                                                          0.00     457.74 r
+  fma_i/fma_i/i_fpnew_rounding/U15/ZN (NAND2_X1)          5.08     462.82 f
+  fma_i/fma_i/i_fpnew_rounding/U14/ZN (NOR2_X1)           4.94     467.76 r
+  fma_i/fma_i/i_fpnew_rounding/U11/ZN (NAND2_X2)          4.42     472.18 f
+  fma_i/fma_i/i_fpnew_rounding/U10/ZN (NOR2_X2)           5.00     477.19 r
+  fma_i/fma_i/i_fpnew_rounding/U8/ZN (NAND2_X2)           3.07     480.26 f
+  fma_i/fma_i/i_fpnew_rounding/U23/Z (XOR2_X1)            5.52     485.78 f
+  fma_i/fma_i/i_fpnew_rounding/abs_rounded_o[14] (fpnew_rounding_0000000f)
+                                                          0.00     485.78 f
+  fma_i/fma_i/result_o[14] (fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0)
+                                                          0.00     485.78 f
+  fma_i/o_c[14] (fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16)
+                                                          0.00     485.78 f
+  U473/ZN (INV_X1)                                        2.85     488.63 r
+  U476/ZN (OAI22_X1)                                      3.24     491.87 f
+  mac_q_reg[14]/D (DFFRNQ_X1)                             0.00     491.87 f
+  data arrival time                                                491.87
+
+  clock MAIN_CLOCK (rise edge)                          500.00     500.00
+  clock network delay (ideal)                             0.50     500.50
+  clock uncertainty                                      -0.30     500.20
+  mac_q_reg[14]/CLK (DFFRNQ_X1)                           0.00     500.20 r
+  library setup time                                     -8.22     491.98
+  data required time                                               491.98
+  --------------------------------------------------------------------------
+  data required time                                               491.98
+  data arrival time                                               -491.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+  Startpoint: sel1[0] (input port clocked by MAIN_CLOCK)
+  Endpoint: mac_q_reg[14]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    0.10       0.60 f
+  sel1[0] (in)                                            0.00       0.60 f
+  U304/ZN (INV_X1)                                        2.18       2.78 r
+  U311/ZN (NOR2_X2)                                       2.21       4.98 f
+  U299/Z (CLKBUF_X4)                                      6.47      11.45 f
+  U320/ZN (AOI22_X1)                                      5.61      17.07 r
+  U319/ZN (NAND3_X2)                                      7.40      24.47 f
+  fma_i/i_b[10] (fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16)
+                                                          0.00      24.47 f
+  fma_i/fma_i/operands_i[1][10] (fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0)
+                                                          0.00      24.47 f
+  fma_i/fma_i/U197/ZN (NAND2_X2)                          4.40      28.86 r
+  fma_i/fma_i/U269/ZN (OAI21_X1)                          4.46      33.32 f
+  fma_i/fma_i/U310/ZN (INV_X1)                            4.24      37.56 r
+  fma_i/fma_i/U313/ZN (OAI21_X1)                          3.87      41.44 f
+  fma_i/fma_i/U316/ZN (XNOR2_X1)                          8.69      50.12 r
+  fma_i/fma_i/U317/ZN (INV_X1)                            2.69      52.81 f
+  fma_i/fma_i/U132/ZN (NOR2_X2)                           4.92      57.73 r
+  fma_i/fma_i/U128/ZN (NOR2_X2)                           3.40      61.13 f
+  fma_i/fma_i/U344/ZN (XNOR2_X1)                          8.06      69.19 r
+  fma_i/fma_i/U107/ZN (NAND2_X2)                          4.10      73.29 f
+  fma_i/fma_i/U129/ZN (INV_X2)                            4.37      77.66 r
+  fma_i/fma_i/U346/Z (XOR2_X1)                            6.51      84.17 r
+  fma_i/fma_i/U347/Z (XOR2_X1)                            8.63      92.80 r
+  fma_i/fma_i/U348/ZN (OAI21_X1)                          4.50      97.30 f
+  fma_i/fma_i/U352/Z (AND2_X2)                            6.32     103.61 f
+  fma_i/fma_i/U81/ZN (NOR2_X2)                            6.95     110.56 r
+  fma_i/fma_i/U106/ZN (NAND2_X2)                          4.73     115.30 f
+  fma_i/fma_i/U120/ZN (INV_X2)                            3.81     119.10 r
+  fma_i/fma_i/U254/ZN (NAND2_X1)                          9.30     128.40 f
+  fma_i/fma_i/U114/ZN (INV_X2)                            5.01     133.41 r
+  fma_i/fma_i/U113/ZN (NAND2_X1)                          4.37     137.78 f
+  fma_i/fma_i/U159/ZN (NAND3_X2)                          4.08     141.86 r
+  fma_i/fma_i/U429/ZN (INV_X1)                            2.92     144.78 f
+  fma_i/fma_i/U430/ZN (AOI21_X1)                          3.07     147.85 r
+  fma_i/fma_i/U158/ZN (NAND3_X1)                          6.76     154.61 f
+  fma_i/fma_i/U433/Z (AND2_X1)                            4.88     159.49 f
+  fma_i/fma_i/U91/ZN (NAND3_X1)                           2.55     162.05 r
+  fma_i/fma_i/U443/ZN (NOR2_X1)                           2.15     164.20 f
+  fma_i/fma_i/U447/ZN (NOR2_X1)                           5.75     169.94 r
+  fma_i/fma_i/U160/ZN (NOR2_X2)                           2.77     172.71 f
+  fma_i/fma_i/adder_i/i_carry (adder_generic_0_0_0_00000025_00000026)
+                                                          0.00     172.71 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/i_carry (adder_ideal_00000025_00000026)
+                                                          0.00     172.71 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/U387/ZN (INV_X1)
+                                                          2.55     175.26 r
+  fma_i/fma_i/adder_i/genblk1.adder_i/U388/ZN (XNOR2_X1)
+                                                          9.71     184.97 f
+  fma_i/fma_i/adder_i/genblk1.adder_i/o_c[0] (adder_ideal_00000025_00000026)
+                                                          0.00     184.97 f
+  fma_i/fma_i/adder_i/o_c[0] (adder_generic_0_0_0_00000025_00000026)
+                                                          0.00     184.97 f
+  fma_i/fma_i/U172/ZN (INV_X2)                            3.43     188.40 r
+  fma_i/fma_i/U69/ZN (NAND2_X2)                           3.69     192.09 f
+  fma_i/fma_i/U168/ZN (NOR2_X2)                           4.55     196.64 r
+  fma_i/fma_i/U87/ZN (NAND2_X2)                           4.38     201.02 f
+  fma_i/fma_i/U171/ZN (NOR2_X2)                           3.74     204.76 r
+  fma_i/fma_i/U133/Z (AND2_X2)                            6.63     211.39 r
+  fma_i/fma_i/U183/ZN (NAND2_X2)                          3.38     214.77 f
+  fma_i/fma_i/U182/ZN (NOR2_X2)                           3.45     218.22 r
+  fma_i/fma_i/U136/Z (AND2_X2)                            6.73     224.95 r
+  fma_i/fma_i/U167/ZN (NAND2_X2)                          3.38     228.33 f
+  fma_i/fma_i/U166/ZN (NOR2_X2)                           3.51     231.84 r
+  fma_i/fma_i/U134/Z (AND2_X2)                            6.53     238.36 r
+  fma_i/fma_i/U170/ZN (NAND2_X2)                          3.38     241.74 f
+  fma_i/fma_i/U169/ZN (NOR2_X2)                           3.51     245.25 r
+  fma_i/fma_i/U135/Z (AND2_X2)                            6.53     251.78 r
+  fma_i/fma_i/U174/ZN (NAND2_X2)                          3.38     255.16 f
+  fma_i/fma_i/U173/ZN (NOR2_X2)                           4.10     259.27 r
+  fma_i/fma_i/U176/ZN (NAND2_X2)                          3.81     263.07 f
+  fma_i/fma_i/U175/ZN (NOR2_X2)                           4.36     267.43 r
+  fma_i/fma_i/U165/ZN (NAND2_X2)                          3.91     271.34 f
+  fma_i/fma_i/U164/ZN (NOR2_X2)                           3.55     274.89 r
+  fma_i/fma_i/U463/Z (AND2_X1)                            5.88     280.77 r
+  fma_i/fma_i/U543/Z (AND2_X1)                            5.87     286.65 r
+  fma_i/fma_i/U545/Z (XOR2_X1)                            5.34     291.98 r
+  fma_i/fma_i/U546/Z (MUX2_X1)                            8.29     300.27 r
+  fma_i/fma_i/i_lzc/in_i[24] (lzc_00000019_1)             0.00     300.27 r
+  fma_i/fma_i/i_lzc/U22/Z (OR2_X1)                        6.18     306.45 r
+  fma_i/fma_i/i_lzc/U23/ZN (NOR2_X2)                      2.86     309.32 f
+  fma_i/fma_i/i_lzc/U25/ZN (NAND2_X2)                     3.76     313.08 r
+  fma_i/fma_i/i_lzc/U13/ZN (NOR2_X2)                      3.25     316.33 f
+  fma_i/fma_i/i_lzc/U27/ZN (NAND2_X2)                     4.51     320.84 r
+  fma_i/fma_i/i_lzc/U11/ZN (NOR2_X2)                      3.84     324.68 f
+  fma_i/fma_i/i_lzc/U5/ZN (INV_X2)                        2.94     327.61 r
+  fma_i/fma_i/i_lzc/U14/ZN (OAI21_X1)                     6.08     333.70 f
+  fma_i/fma_i/i_lzc/cnt_o[4] (lzc_00000019_1)             0.00     333.70 f
+  fma_i/fma_i/U605/Z (XOR2_X1)                            7.04     340.74 f
+  fma_i/fma_i/U22/ZN (NOR2_X1)                            6.31     347.05 r
+  fma_i/fma_i/U236/ZN (OAI21_X1)                          4.31     351.36 f
+  fma_i/fma_i/U235/ZN (AOI21_X1)                          4.38     355.74 r
+  fma_i/fma_i/U619/ZN (OAI21_X1)                          3.18     358.92 f
+  fma_i/fma_i/U96/Z (AND2_X2)                             5.29     364.21 f
+  fma_i/fma_i/U185/ZN (NAND2_X2)                          3.78     367.99 r
+  fma_i/fma_i/U105/ZN (INV_X4)                            2.78     370.76 f
+  fma_i/fma_i/U147/ZN (AOI21_X2)                          3.19     373.96 r
+  fma_i/fma_i/U44/ZN (OAI21_X2)                           5.71     379.67 f
+  fma_i/fma_i/U19/Z (BUF_X4)                              8.26     387.93 f
+  fma_i/fma_i/U641/ZN (NAND2_X2)                          5.77     393.70 r
+  fma_i/fma_i/U223/ZN (INV_X2)                            5.05     398.75 f
+  fma_i/fma_i/U272/ZN (NAND2_X1)                          3.70     402.45 r
+  fma_i/fma_i/U195/ZN (NAND4_X2)                          7.21     409.66 f
+  fma_i/fma_i/U767/ZN (AOI22_X1)                          5.18     414.83 r
+  fma_i/fma_i/U213/ZN (NAND2_X1)                          4.33     419.16 f
+  fma_i/fma_i/U89/Z (AND2_X1)                             4.65     423.81 f
+  fma_i/fma_i/U88/ZN (NOR2_X2)                            3.64     427.45 r
+  fma_i/fma_i/U146/ZN (INV_X2)                            2.49     429.94 f
+  fma_i/fma_i/U186/ZN (NOR2_X2)                           4.33     434.27 r
+  fma_i/fma_i/U49/ZN (NAND2_X2)                           3.15     437.42 f
+  fma_i/fma_i/U48/ZN (INV_X2)                             4.92     442.34 r
+  fma_i/fma_i/U82/Z (BUF_X2)                              5.85     448.19 r
+  fma_i/fma_i/U1072/ZN (AOI22_X1)                         2.93     451.12 f
+  fma_i/fma_i/U1073/ZN (OAI21_X1)                         6.63     457.75 r
+  fma_i/fma_i/i_fpnew_rounding/abs_value_i[7] (fpnew_rounding_0000000f)
+                                                          0.00     457.75 r
+  fma_i/fma_i/i_fpnew_rounding/U15/ZN (NAND2_X1)          5.08     462.83 f
+  fma_i/fma_i/i_fpnew_rounding/U14/ZN (NOR2_X1)           4.94     467.77 r
+  fma_i/fma_i/i_fpnew_rounding/U11/ZN (NAND2_X2)          4.42     472.19 f
+  fma_i/fma_i/i_fpnew_rounding/U10/ZN (NOR2_X2)           5.00     477.19 r
+  fma_i/fma_i/i_fpnew_rounding/U8/ZN (NAND2_X2)           3.07     480.26 f
+  fma_i/fma_i/i_fpnew_rounding/U23/Z (XOR2_X1)            5.52     485.79 f
+  fma_i/fma_i/i_fpnew_rounding/abs_rounded_o[14] (fpnew_rounding_0000000f)
+                                                          0.00     485.79 f
+  fma_i/fma_i/result_o[14] (fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0)
+                                                          0.00     485.79 f
+  fma_i/o_c[14] (fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16)
+                                                          0.00     485.79 f
+  U473/ZN (INV_X1)                                        2.85     488.63 r
+  U476/ZN (OAI22_X1)                                      3.24     491.87 f
+  mac_q_reg[14]/D (DFFRNQ_X1)                             0.00     491.87 f
+  data arrival time                                                491.87
+
+  clock MAIN_CLOCK (rise edge)                          500.00     500.00
+  clock network delay (ideal)                             0.50     500.50
+  clock uncertainty                                      -0.30     500.20
+  mac_q_reg[14]/CLK (DFFRNQ_X1)                           0.00     500.20 r
+  library setup time                                     -8.22     491.98
+  data required time                                               491.98
+  --------------------------------------------------------------------------
+  data required time                                               491.98
+  data arrival time                                               -491.87
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: result_reg_reg[11]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: result_out[11]
+            (output port clocked by MAIN_CLOCK)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  result_reg_reg[11]/CLK (DFFRNQ_X1)       0.00       0.50 r
+  result_reg_reg[11]/Q (DFFRNQ_X1)        13.09      13.59 r
+  U315/Z (CLKBUF_X2)                       4.26      17.84 r
+  result_out[11] (out)                     0.00      17.84 r
+  data arrival time                                  17.84
+
+  clock MAIN_CLOCK (rise edge)           500.00     500.00
+  clock network delay (ideal)              0.50     500.50
+  clock uncertainty                       -0.30     500.20
+  output external delay                   -0.10     500.10
+  data required time                                500.10
+  -----------------------------------------------------------
+  data required time                                500.10
+  data arrival time                                 -17.84
+  -----------------------------------------------------------
+  slack (MET)                                       482.26
+
+
+1

@@ -1,0 +1,260 @@
+Warning: Design 'sa_processing_element' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP5
+Date:        Sun Oct  5 11:18:13 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     87
+    Multiply driven inputs (LINT-6)                                54
+    Unconnected ports (LINT-28)                                    25
+    Feedthrough (LINT-29)                                           4
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      3
+
+Cells                                                              43
+    Cells do not drive (LINT-1)                                     7
+    Connected to power or ground (LINT-32)                         33
+    Nets connected to multiple pins on same cell (LINT-33)          3
+
+Nets                                                                2
+    Multiply driven net with constant driver (LINT-54)              2
+
+Tristate                                                           62
+    A tristate bus has a non tri-state driver (LINT-34)            62
+--------------------------------------------------------------------------------
+
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C366' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C440' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C441' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_20' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C455' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][15]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][14]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][13]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][12]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[2][0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][15]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][14]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][13]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][12]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[1][0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][15]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][14]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][13]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][12]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][11]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][10]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][9]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][8]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'operands_i[0][0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'is_boxed_i[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'is_boxed_i[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'is_boxed_i[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'rnd_mode_i[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'rnd_mode_i[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'rnd_mode_i[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'sa_processing_element', port 'c[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'flush_i' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'msel_i' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_clk' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_en_ff' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'tag_i' is connected directly to output port 'tag_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'aux_i' is connected directly to output port 'aux_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'in_valid_i' is connected directly to output port 'out_valid_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'out_ready_i' is connected directly to output port 'in_ready_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[NV]' is connected directly to output port 'status_o[DZ]'. (LINT-31)
+Warning: In design 'sa_processing_element', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_msel' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[2]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[1]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[0]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[2]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[1]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[0]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[3]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[2]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[1]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[0]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_mod_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'tag_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'aux_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_valid_i' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'flush_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'out_ready_i' is connected to logic 1. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[36]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[35]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[34]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[33]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[32]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[31]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[30]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[29]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[28]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[27]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[26]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[25]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[24]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[1]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[0]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_c[37]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', the same net is connected to more than one pin on submodule 'fma_i'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'is_boxed_i[2]', 'is_boxed_i[1]'', 'is_boxed_i[0]', 'in_valid_i', 'out_ready_i'.
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', the same net is connected to more than one pin on submodule 'fma_i'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rnd_mode_i[2]', 'rnd_mode_i[1]'', 'rnd_mode_i[0]', 'op_i[3]', 'op_i[2]', 'op_i[1]', 'op_i[0]', 'op_mod_i', 'tag_i', 'aux_i', 'flush_i'.
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', the same net is connected to more than one pin on submodule 'adder_i'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_p[36]', 'i_p[35]'', 'i_p[34]', 'i_p[33]', 'i_p[32]', 'i_p[31]', 'i_p[30]', 'i_p[29]', 'i_p[28]', 'i_p[27]', 'i_p[26]', 'i_p[25]', 'i_p[24]', 'i_p[1]', 'i_p[0]', 'i_c[37]'.
+Warning: In design 'sa_processing_element', three-state bus 'c_out[0]' has non three-state driver 'mac_q_reg[0]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[1]' has non three-state driver 'mac_q_reg[1]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[2]' has non three-state driver 'mac_q_reg[2]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[3]' has non three-state driver 'mac_q_reg[3]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[4]' has non three-state driver 'mac_q_reg[4]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[5]' has non three-state driver 'mac_q_reg[5]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[6]' has non three-state driver 'mac_q_reg[6]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[7]' has non three-state driver 'mac_q_reg[7]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[8]' has non three-state driver 'mac_q_reg[8]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[9]' has non three-state driver 'mac_q_reg[9]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[10]' has non three-state driver 'mac_q_reg[10]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[11]' has non three-state driver 'mac_q_reg[11]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[12]' has non three-state driver 'mac_q_reg[12]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[13]' has non three-state driver 'mac_q_reg[13]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[14]' has non three-state driver 'mac_q_reg[14]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'c_out[15]' has non three-state driver 'mac_q_reg[15]/Q'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/in_ready_o' has non three-state driver 'fma_i/U1/**logic_1**'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/tag_o' has non three-state driver 'fma_i/U2/**logic_0**'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/round_sticky_bits[0]' has non three-state driver 'fma_i/fma_i/C345/Z_0'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/round_sticky_bits[1]' has non three-state driver 'fma_i/fma_i/C345/Z_1'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[0]' has non three-state driver 'fma_i/fma_i/C344/Z_0'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[1]' has non three-state driver 'fma_i/fma_i/C344/Z_1'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[2]' has non three-state driver 'fma_i/fma_i/C344/Z_2'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[3]' has non three-state driver 'fma_i/fma_i/C344/Z_3'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[4]' has non three-state driver 'fma_i/fma_i/C344/Z_4'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[5]' has non three-state driver 'fma_i/fma_i/C344/Z_5'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[6]' has non three-state driver 'fma_i/fma_i/C344/Z_6'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[7]' has non three-state driver 'fma_i/fma_i/C344/Z_7'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[8]' has non three-state driver 'fma_i/fma_i/C344/Z_8'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_mantissa[9]' has non three-state driver 'fma_i/fma_i/C344/Z_9'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_exponent[0]' has non three-state driver 'fma_i/fma_i/C343/Z_0'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_exponent[1]' has non three-state driver 'fma_i/fma_i/C343/Z_1'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_exponent[2]' has non three-state driver 'fma_i/fma_i/C343/Z_2'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_exponent[3]' has non three-state driver 'fma_i/fma_i/C343/Z_3'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/pre_round_exponent[4]' has non three-state driver 'fma_i/fma_i/C343/Z_4'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/mid_pipe_final_sign_q[0]' has non three-state driver 'fma_i/fma_i/C335/Z_0'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/mid_pipe_eff_sub_q[0]' has non three-state driver 'fma_i/fma_i/C349/Z'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[0]' has non three-state driver 'fma_i/fma_i/C334/Z_0'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[1]' has non three-state driver 'fma_i/fma_i/C334/Z_1'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[2]' has non three-state driver 'fma_i/fma_i/C334/Z_2'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[3]' has non three-state driver 'fma_i/fma_i/C334/Z_3'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[4]' has non three-state driver 'fma_i/fma_i/C334/Z_4'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[5]' has non three-state driver 'fma_i/fma_i/C334/Z_5'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[6]' has non three-state driver 'fma_i/fma_i/C334/Z_6'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[7]' has non three-state driver 'fma_i/fma_i/C334/Z_7'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[8]' has non three-state driver 'fma_i/fma_i/C334/Z_8'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[9]' has non three-state driver 'fma_i/fma_i/C334/Z_9'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[10]' has non three-state driver 'fma_i/fma_i/C334/Z_10'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[11]' has non three-state driver 'fma_i/fma_i/C334/Z_11'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[12]' has non three-state driver 'fma_i/fma_i/C334/Z_12'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[13]' has non three-state driver 'fma_i/fma_i/C334/Z_13'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[14]' has non three-state driver 'fma_i/fma_i/C334/Z_14'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[15]' has non three-state driver 'fma_i/fma_i/C334/Z_15'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[16]' has non three-state driver 'fma_i/fma_i/C334/Z_16'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[17]' has non three-state driver 'fma_i/fma_i/C334/Z_17'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[18]' has non three-state driver 'fma_i/fma_i/C334/Z_18'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[19]' has non three-state driver 'fma_i/fma_i/C334/Z_19'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[20]' has non three-state driver 'fma_i/fma_i/C334/Z_20'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[21]' has non three-state driver 'fma_i/fma_i/C334/Z_21'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[22]' has non three-state driver 'fma_i/fma_i/C334/Z_22'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[23]' has non three-state driver 'fma_i/fma_i/C334/Z_23'. (LINT-34)
+Warning: In design 'sa_processing_element', three-state bus 'fma_i/fma_i/sum[24]' has non three-state driver 'fma_i/fma_i/C334/Z_24'. (LINT-34)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[NV]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[DZ]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'extension_bit_o' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'sa_processing_element', multiply-driven net 'fma_i/fma_i/in_ready_o' is driven by constant 1. (LINT-54)
+Warning: In design 'sa_processing_element', multiply-driven net 'fma_i/fma_i/tag_o' is driven by constant 0. (LINT-54)
+1

@@ -1,0 +1,154 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sa_processing_element_max
+Version: V-2023.12-SP5
+Date   : Tue Oct  7 01:50:02 2025
+****************************************
+
+Operating Conditions: typical   Library: NanGate_15nm_OCL
+Wire Load Model Mode: top
+
+  Startpoint: max_current_reg[1]
+              (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: max_current_reg[0]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  max_current_reg[1]/CLK (DFFRNQ_X1)                      0.00       0.50 r
+  max_current_reg[1]/Q (DFFRNQ_X1)                       14.21      14.71 r
+  fpnew_max_i/operands_i[1][1] (fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_)
+                                                          0.00      14.71 r
+  fpnew_max_i/U17/ZN (INV_X1)                             3.36      18.06 f
+  fpnew_max_i/U18/ZN (OAI22_X1)                           4.47      22.53 r
+  fpnew_max_i/U20/ZN (OAI22_X1)                           4.34      26.87 f
+  fpnew_max_i/U23/ZN (AOI22_X1)                           4.69      31.56 r
+  fpnew_max_i/U27/ZN (OAI22_X1)                           3.87      35.43 f
+  fpnew_max_i/U30/ZN (AOI22_X1)                           4.61      40.04 r
+  fpnew_max_i/U34/ZN (OAI22_X1)                           3.87      43.91 f
+  fpnew_max_i/U37/ZN (AOI22_X1)                           6.12      50.03 r
+  fpnew_max_i/U40/ZN (AOI21_X1)                           3.51      53.54 f
+  fpnew_max_i/U41/ZN (OAI21_X1)                           3.23      56.77 r
+  fpnew_max_i/U42/ZN (NAND2_X1)                           2.76      59.53 f
+  fpnew_max_i/U43/ZN (AOI22_X1)                           5.79      65.32 r
+  fpnew_max_i/U47/ZN (AOI21_X1)                           3.51      68.83 f
+  fpnew_max_i/U48/ZN (OAI21_X1)                           3.21      72.04 r
+  fpnew_max_i/U52/ZN (AOI22_X1)                           4.19      76.23 f
+  fpnew_max_i/U53/ZN (NAND2_X1)                           3.03      79.26 r
+  fpnew_max_i/U54/ZN (OAI21_X1)                           4.51      83.77 f
+  fpnew_max_i/U56/ZN (OAI21_X1)                          19.58     103.35 r
+  fpnew_max_i/U57/ZN (INV_X1)                             7.03     110.39 f
+  fpnew_max_i/U60/ZN (AOI22_X1)                           5.90     116.29 r
+  fpnew_max_i/U61/ZN (INV_X1)                             2.32     118.61 f
+  fpnew_max_i/result_o[0] (fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_)
+                                                          0.00     118.61 f
+  U291/ZN (AOI22_X1)                                      4.60     123.20 r
+  U292/ZN (OAI21_X1)                                      3.68     126.89 f
+  max_current_reg[0]/D (DFFRNQ_X1)                        0.00     126.89 f
+  data arrival time                                                126.89
+
+  clock MAIN_CLOCK (rise edge)                          500.00     500.00
+  clock network delay (ideal)                             0.50     500.50
+  clock uncertainty                                      -0.30     500.20
+  max_current_reg[0]/CLK (DFFRNQ_X1)                      0.00     500.20 r
+  library setup time                                     -8.12     492.08
+  data required time                                               492.08
+  --------------------------------------------------------------------------
+  data required time                                               492.08
+  data arrival time                                               -126.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                      365.20
+
+
+  Startpoint: a[1] (input port clocked by MAIN_CLOCK)
+  Endpoint: max_current_reg[0]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: INPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    0.10       0.60 f
+  a[1] (in)                                               0.00       0.60 f
+  fpnew_max_i/operands_i[0][1] (fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_)
+                                                          0.00       0.60 f
+  fpnew_max_i/U15/ZN (INV_X1)                             2.12       2.72 r
+  fpnew_max_i/U16/ZN (OAI21_X1)                           3.10       5.82 f
+  fpnew_max_i/U18/ZN (OAI22_X1)                           3.43       9.25 r
+  fpnew_max_i/U20/ZN (OAI22_X1)                           4.34      13.59 f
+  fpnew_max_i/U23/ZN (AOI22_X1)                           4.69      18.28 r
+  fpnew_max_i/U27/ZN (OAI22_X1)                           3.87      22.15 f
+  fpnew_max_i/U30/ZN (AOI22_X1)                           4.61      26.76 r
+  fpnew_max_i/U34/ZN (OAI22_X1)                           3.87      30.63 f
+  fpnew_max_i/U37/ZN (AOI22_X1)                           6.12      36.75 r
+  fpnew_max_i/U40/ZN (AOI21_X1)                           3.51      40.26 f
+  fpnew_max_i/U41/ZN (OAI21_X1)                           3.23      43.48 r
+  fpnew_max_i/U42/ZN (NAND2_X1)                           2.76      46.25 f
+  fpnew_max_i/U43/ZN (AOI22_X1)                           5.79      52.04 r
+  fpnew_max_i/U47/ZN (AOI21_X1)                           3.51      55.55 f
+  fpnew_max_i/U48/ZN (OAI21_X1)                           3.21      58.76 r
+  fpnew_max_i/U52/ZN (AOI22_X1)                           4.19      62.95 f
+  fpnew_max_i/U53/ZN (NAND2_X1)                           3.03      65.97 r
+  fpnew_max_i/U54/ZN (OAI21_X1)                           4.51      70.48 f
+  fpnew_max_i/U56/ZN (OAI21_X1)                          19.58      90.07 r
+  fpnew_max_i/U57/ZN (INV_X1)                             7.03      97.10 f
+  fpnew_max_i/U60/ZN (AOI22_X1)                           5.90     103.01 r
+  fpnew_max_i/U61/ZN (INV_X1)                             2.32     105.32 f
+  fpnew_max_i/result_o[0] (fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_)
+                                                          0.00     105.32 f
+  U291/ZN (AOI22_X1)                                      4.60     109.92 r
+  U292/ZN (OAI21_X1)                                      3.68     113.60 f
+  max_current_reg[0]/D (DFFRNQ_X1)                        0.00     113.60 f
+  data arrival time                                                113.60
+
+  clock MAIN_CLOCK (rise edge)                          500.00     500.00
+  clock network delay (ideal)                             0.50     500.50
+  clock uncertainty                                      -0.30     500.20
+  max_current_reg[0]/CLK (DFFRNQ_X1)                      0.00     500.20 r
+  library setup time                                     -8.12     492.08
+  data required time                                               492.08
+  --------------------------------------------------------------------------
+  data required time                                               492.08
+  data arrival time                                               -113.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                      378.48
+
+
+  Startpoint: a_q_reg[0] (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Endpoint: a_out[0] (output port clocked by MAIN_CLOCK)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)             0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  a_q_reg[0]/CLK (DFFRNQ_X1)               0.00       0.50 r
+  a_q_reg[0]/Q (DFFRNQ_X1)                12.33      12.83 r
+  U355/Z (BUF_X1)                          3.29      16.12 r
+  a_out[0] (out)                           0.00      16.12 r
+  data arrival time                                  16.12
+
+  clock MAIN_CLOCK (rise edge)           500.00     500.00
+  clock network delay (ideal)              0.50     500.50
+  clock uncertainty                       -0.30     500.20
+  output external delay                   -0.10     500.10
+  data required time                                500.10
+  -----------------------------------------------------------
+  data required time                                500.10
+  data arrival time                                 -16.12
+  -----------------------------------------------------------
+  slack (MET)                                       483.98
+
+
+1

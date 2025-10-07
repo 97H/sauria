@@ -1,0 +1,29 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : sa_processing_element
+Version: V-2023.12-SP5
+Date   : Tue Oct  7 01:33:23 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   sa_processing_element        0.00         807.12        -807.12  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   sa_processing_element        0.00       37567780.00    -37567780.00
+                                                                    (VIOLATED)
+
+
+1

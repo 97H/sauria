@@ -1,0 +1,21 @@
+
+  Linking design 'sa_processing_element'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (7 designs)               /home/csarch/workspace/sauria/mosa_pe/syn/sa_processing_element.db, etc
+  NanGate_15nm_OCL (library)  /home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db
+  dw_foundation.sldb (library) /home/csarch/tools/syn/V-2023.12-SP5/libraries/syn/dw_foundation.sldb
+
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "FpFormat=3'h2,NumOperands=3". (HDL-193)
+Warning: Cannot find the design 'fpnew_classifier' in the library 'WORK'. (LBR-1)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "WIDTH=32'h00000019,MODE=1". (HDL-193)
+Warning: Cannot find the design 'lzc' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "AbsWidth=@28206b3a32373220743a20693a2028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a303030303030303520292028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a3030303030303061202920292000@". (HDL-193)
+Warning: Cannot find the design 'fpnew_rounding' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fpnew_classifier' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'lzc' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'fpnew_rounding' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+0

@@ -1,0 +1,87 @@
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP5
+Date:        Tue Oct  7 01:50:00 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     11
+    Unconnected ports (LINT-28)                                     5
+    Feedthrough (LINT-29)                                           6
+
+Cells                                                              16
+    Connected to power or ground (LINT-32)                         14
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                               22
+    Unloaded nets (LINT-2)                                         22
+--------------------------------------------------------------------------------
+
+Warning: In design 'sa_processing_element_max', net 'fpnew_is_class' driven by pin 'fpnew_max_i/is_class_o' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[0]' driven by pin 'fpnew_max_i/class_mask_o[0]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[1]' driven by pin 'fpnew_max_i/class_mask_o[1]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[2]' driven by pin 'fpnew_max_i/class_mask_o[2]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[3]' driven by pin 'fpnew_max_i/class_mask_o[3]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[4]' driven by pin 'fpnew_max_i/class_mask_o[4]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[5]' driven by pin 'fpnew_max_i/class_mask_o[5]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[6]' driven by pin 'fpnew_max_i/class_mask_o[6]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[7]' driven by pin 'fpnew_max_i/class_mask_o[7]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[8]' driven by pin 'fpnew_max_i/class_mask_o[8]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_class_mask[9]' driven by pin 'fpnew_max_i/class_mask_o[9]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_extension_bit' driven by pin 'fpnew_max_i/extension_bit_o' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_status[NX]' driven by pin 'fpnew_max_i/status_o[NX]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_status[UF]' driven by pin 'fpnew_max_i/status_o[UF]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_status[OF]' driven by pin 'fpnew_max_i/status_o[OF]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_status[DZ]' driven by pin 'fpnew_max_i/status_o[DZ]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_status[NV]' driven by pin 'fpnew_max_i/status_o[NV]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_max_i/info_q[0][is_quiet]' driven by pin 'fpnew_max_i/i_class_a/info_o[0][is_quiet]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_max_i/info_q[1][is_quiet]' driven by pin 'fpnew_max_i/i_class_a/info_o[1][is_quiet]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_max_i/info_q[1][is_inf]' driven by pin 'fpnew_max_i/i_class_a/info_o[1][is_inf]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_max_i/info_q[1][is_subnormal]' driven by pin 'fpnew_max_i/i_class_a/info_o[1][is_subnormal]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element_max', net 'fpnew_max_i/info_q[1][is_normal]' driven by pin 'fpnew_max_i/i_class_a/info_o[1][is_normal]' has no loads. (LINT-2)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', port 'clk_i' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', port 'rst_ni' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', port 'flush_i' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_classifier_2_2', port 'operands_i[1][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_classifier_2_2', port 'operands_i[0][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', input port 'tag_i' is connected directly to output port 'tag_o'. (LINT-29)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', input port 'aux_i' is connected directly to output port 'aux_o'. (LINT-29)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', input port 'in_valid_i' is connected directly to output port 'out_valid_o'. (LINT-29)
+Warning: In design 'fpnew_noncomp_2_0_0__logic_Z_1yB___logic_Z_1yB_', input port 'out_ready_i' is connected directly to output port 'in_ready_o'. (LINT-29)
+Warning: In design 'fpnew_classifier_2_2', input port 'is_boxed_i[1]' is connected directly to output port 'info_o[1][is_boxed]'. (LINT-29)
+Warning: In design 'fpnew_classifier_2_2', input port 'is_boxed_i[0]' is connected directly to output port 'info_o[0][is_boxed]'. (LINT-29)
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[1]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[0]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[2]' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[1]' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[0]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[3]' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[2]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[1]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[0]' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_mod_i' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'tag_i' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'aux_i' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'flush_i' is connected to logic 0. 
+Warning: In design 'sa_processing_element_max', a pin on submodule 'fpnew_max_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'out_ready_i' is connected to logic 1. 
+Warning: In design 'sa_processing_element_max', the same net is connected to more than one pin on submodule 'fpnew_max_i'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'is_boxed_i[1]', 'is_boxed_i[0]'', 'rnd_mode_i[0]', 'op_i[2]', 'op_i[1]', 'op_i[0]', 'out_ready_i'.
+Warning: In design 'sa_processing_element_max', the same net is connected to more than one pin on submodule 'fpnew_max_i'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rnd_mode_i[2]', 'rnd_mode_i[1]'', 'op_i[3]', 'op_mod_i', 'tag_i', 'aux_i', 'flush_i'.
+1

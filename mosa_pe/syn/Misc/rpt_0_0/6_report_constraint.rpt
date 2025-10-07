@@ -1,0 +1,41 @@
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0' with
+	the parameters "FpFormat=3'h2,NumOperands=3". (HDL-193)
+Warning: Cannot find the design 'fpnew_classifier' in the library 'WORK'. (LBR-1)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0' with
+	the parameters "WIDTH=32'h00000019,MODE=1". (HDL-193)
+Warning: Cannot find the design 'lzc' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0' with
+	the parameters "AbsWidth=@28206b3a32373220743a20693a2028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a303030303030303520292028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a3030303030303061202920292000@". (HDL-193)
+Warning: Cannot find the design 'fpnew_rounding' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fpnew_classifier' in 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0'. (LINK-5)
+Warning: Unable to resolve reference 'lzc' in 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0'. (LINK-5)
+Warning: Unable to resolve reference 'fpnew_rounding' in 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0'. (LINK-5)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : sa_processing_element
+Version: V-2023.12-SP5
+Date   : Sun Oct  5 11:18:16 2025
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   sa_processing_element        0.00         553.94        -553.94  (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   sa_processing_element        0.00       22338750.00    -22338750.00
+                                                                    (VIOLATED)
+
+
+1

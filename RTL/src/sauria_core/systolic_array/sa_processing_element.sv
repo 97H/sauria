@@ -27,12 +27,12 @@
 
 module sa_processing_element #(
     parameter ARITHMETIC = 0,
-	parameter MUL_TYPE = 0,         
+	parameter MUL_TYPE = 0,
 	parameter M_APPROX = 0,
 	parameter MM_APPROX = 0,
-	parameter ADD_TYPE = 0,         
-	parameter A_APPROX = 0,       	
-	parameter AA_APPROX = 0,  
+	parameter ADD_TYPE = 0,
+	parameter A_APPROX = 0,
+	parameter AA_APPROX = 0,
     parameter IA_W = 16,
     parameter IB_W = 16,
     parameter OC_W = 48,
@@ -42,7 +42,9 @@ module sa_processing_element #(
     parameter ZERO_GATING_MULT = 1,
     parameter ZERO_GATING_ADD = 1,
     parameter ZD_LOOKAHEAD = 1,
-    parameter EXTRA_CSREG = 0
+    parameter EXTRA_CSREG = 0,
+    parameter WORD_SIZE = 16,
+    parameter RST_SIZE = 32
 )(
     // Clk, RST
 	input logic 				i_clk,
@@ -52,7 +54,7 @@ module sa_processing_element #(
     input  logic [IA_W-1:0]   	i_a,	// Activation operand
 	input  logic [IB_W-1:0]		i_b,	// Weight operand
 	input  logic [OC_W-1:0] 	i_c,	// MAC input (preload / out chain)
-	
+
 	// Control Inputs
     input logic                 i_reg_clear,    // Register clear
 	input logic					i_cell_en,      // Cell enable (for PE deactivation)
@@ -62,7 +64,16 @@ module sa_processing_element #(
     input logic					i_cscan_en,     // Output Scanchain Enable
 
     input logic [TH_W-1:0]      i_thres,        // Threshold for bit negligence in zero detection
-	
+
+	// Flexible routing control (MOSA-style)
+	input logic [1:0]           i_sel0,         // Input operand A mux select
+	input logic [1:0]           i_sel1,         // Input operand B mux select
+	input logic                 i_sel2,         // Adder input mux select
+	input logic                 i_sel3,         // MAC register write enable
+	input logic [1:0]           i_sel4,         // Result register control
+	input logic [WORD_SIZE-1:0] i_imm1,         // Immediate value 1
+	input logic [WORD_SIZE-1:0] i_imm2,         // Immediate value 2
+
 	// Control Outputs
 	output  logic               o_cswitch, 	// Activation output
     output  logic               o_cell_en, 	// Weight output
@@ -70,7 +81,8 @@ module sa_processing_element #(
 	// Data Outputs
 	output  logic [IA_W-1:0]  	o_a, 	// Activation output
     output  logic [IB_W-1:0]  	o_b, 	// Weight output
-	output  logic [OC_W-1:0]  	o_c 	// MAC output (preload / out chain)
+	output  logic [OC_W-1:0]  	o_c, 	// MAC output (preload / out chain)
+	output  logic [RST_SIZE-1:0] o_result  // Final result output
 );
 
 // ----------
@@ -109,6 +121,12 @@ logic [OC_W-1:0]        mhold_q;
 // Accumulator context switch and output chain
 logic [OC_W-1:0]        mac_sc_d, mac_sc_q;
 logic                   sc_reg_en;
+
+// MOSA-style flexible routing
+logic [IA_W-1:0]        input_wire;     // Muxed input operand A
+logic [IB_W-1:0]        weight_wire;    // Muxed input operand B
+logic [OC_W-1:0]        add_wire;       // Muxed adder input
+logic [RST_SIZE-1:0]    result_reg;     // Final result register
 
 // ----------
 // Control

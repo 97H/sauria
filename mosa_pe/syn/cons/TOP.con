@@ -28,7 +28,7 @@ reset_design
 
 # 100Mhz clock is a 10ns period:
 # So, let's treat 6 ns :: 60% of 10ns period to make chip stable (40% margin for zero delay model) 
-create_clock -period 2.0 -name MAIN_CLOCK [get_ports clk]
+create_clock -period 500 -name MAIN_CLOCK [get_ports clk]
 
 
 # External clock source latency is 1ns 

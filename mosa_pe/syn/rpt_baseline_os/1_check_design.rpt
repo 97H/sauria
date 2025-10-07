@@ -1,0 +1,163 @@
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP5
+Date:        Mon Oct  6 12:12:18 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     39
+    Unconnected ports (LINT-28)                                    28
+    Feedthrough (LINT-29)                                           7
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      3
+
+Cells                                                              43
+    Cells do not drive (LINT-1)                                     7
+    Connected to power or ground (LINT-32)                         33
+    Nets connected to multiple pins on same cell (LINT-33)          3
+
+Nets                                                               20
+    Unloaded nets (LINT-2)                                         20
+--------------------------------------------------------------------------------
+
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C366' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C440' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C441' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'B_20' does not drive any nets. (LINT-1)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', cell 'C455' does not drive any nets. (LINT-1)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_boxed]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_boxed]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_boxed]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_boxed]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_boxed]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_boxed]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/result_zero' driven by pin 'fma_i/fma_i/i_fpnew_rounding/exact_zero_o' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_quiet]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_quiet]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_signalling]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_signalling]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_nan]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_nan]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_inf]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_inf]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[0][is_subnormal]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[0][is_subnormal]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_quiet]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_quiet]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_signalling]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_signalling]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_nan]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_nan]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_inf]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_inf]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[1][is_subnormal]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[1][is_subnormal]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_quiet]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_quiet]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_signalling]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_signalling]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_nan]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_nan]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_inf]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_inf]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_zero]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_zero]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', net 'fma_i/fma_i/info_q[2][is_subnormal]' driven by pin 'fma_i/fma_i/i_class_inputs/info_o[2][is_subnormal]' has no loads. (LINT-2)
+Warning: In design 'sa_processing_element', port 'c[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sa_processing_element', port 'c[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'op_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'flush_i' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', port 'msel_i' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_classifier_2_3', port 'operands_i[2][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_classifier_2_3', port 'operands_i[1][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_classifier_2_3', port 'operands_i[0][15]' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_clk' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_en_ff' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplier_ideal_0_0_0000000b_0000000b_00000016', port 'i_rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'tag_i' is connected directly to output port 'tag_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'aux_i' is connected directly to output port 'aux_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'in_valid_i' is connected directly to output port 'out_valid_o'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', input port 'out_ready_i' is connected directly to output port 'in_ready_o'. (LINT-29)
+Warning: In design 'fpnew_classifier_2_3', input port 'is_boxed_i[2]' is connected directly to output port 'info_o[2][is_boxed]'. (LINT-29)
+Warning: In design 'fpnew_classifier_2_3', input port 'is_boxed_i[1]' is connected directly to output port 'info_o[1][is_boxed]'. (LINT-29)
+Warning: In design 'fpnew_classifier_2_3', input port 'is_boxed_i[0]' is connected directly to output port 'info_o[0][is_boxed]'. (LINT-29)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[NV]' is connected directly to output port 'status_o[DZ]'. (LINT-31)
+Warning: In design 'sa_processing_element', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_msel' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[2]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[1]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'is_boxed_i[0]' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[2]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[1]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rnd_mode_i[0]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[3]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[2]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[1]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_i[0]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'op_mod_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'tag_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'aux_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_valid_i' is connected to logic 1. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'flush_i' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', a pin on submodule 'fma_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'out_ready_i' is connected to logic 1. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[36]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[35]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[34]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[33]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[32]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[31]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[30]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[29]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[28]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[27]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[26]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[25]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[24]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[1]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_p[0]' is connected to logic 0. 
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', a pin on submodule 'adder_i' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'i_c[37]' is connected to logic 0. 
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', the same net is connected to more than one pin on submodule 'fma_i'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'is_boxed_i[2]', 'is_boxed_i[1]'', 'is_boxed_i[0]', 'in_valid_i', 'out_ready_i'.
+Warning: In design 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES0_INTERMEDIATE_PIPELINE_STAGE0_ZERO_GATING_MULT0_FP_W16', the same net is connected to more than one pin on submodule 'fma_i'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rnd_mode_i[2]', 'rnd_mode_i[1]'', 'rnd_mode_i[0]', 'op_i[3]', 'op_i[2]', 'op_i[1]', 'op_i[0]', 'op_mod_i', 'tag_i', 'aux_i', 'flush_i'.
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', the same net is connected to more than one pin on submodule 'adder_i'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'i_p[36]', 'i_p[35]'', 'i_p[34]', 'i_p[33]', 'i_p[32]', 'i_p[31]', 'i_p[30]', 'i_p[29]', 'i_p[28]', 'i_p[27]', 'i_p[26]', 'i_p[25]', 'i_p[24]', 'i_p[1]', 'i_p[0]', 'i_c[37]'.
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[NV]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'status_o[DZ]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpnew_fma_2_0_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_0', output port 'extension_bit_o' is connected directly to 'logic 1'. (LINT-52)
+1

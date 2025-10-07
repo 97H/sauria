@@ -20,6 +20,10 @@ define_design_lib work -path ./work
 
 set rtl [ list \
         ../../pulp_platform/fpnew/src/fpnew_pkg.sv\
+        ../../pulp_platform/fpnew/src/common_cells/src/cf_math_pkg.sv\
+        ../../pulp_platform/fpnew/src/common_cells/src/lzc.sv\
+        ../../pulp_platform/fpnew/src/fpnew_classifier.sv\
+        ../../pulp_platform/fpnew/src/fpnew_rounding.sv\
         ../src/pulp_fma/fma_wrapper.sv\
         ../src/pulp_fma/fpnew_fma.sv\
         ../src/multiplier/multiplier_generic.sv\

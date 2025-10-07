@@ -1,0 +1,280 @@
+Warning: Design 'sa_processing_element' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 0%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 183 GB, Tmp Disk Free: 61 GB
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.5 |     *     |
+| Licensed DW Building Blocks        | V-2023.12-DWBB_202312.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 426                                    |
+| Number of User Hierarchies                              | 6                                      |
+| Sequential Cell Count                                   | 196                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 5                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 50                                     |
+| Number of Dont Touch Nets                               | 6                                      |
+| Number of Size Only Cells                               | 60                                     |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 169 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'sa_processing_element'
+Information: The register 'fma_i/fma_i/inp_pipe_aux_q_reg[2]' will be removed. (OPT-1207)
+Information: The register 'fma_i/fma_i/inp_pipe_tag_q_reg[2]' will be removed. (OPT-1207)
+Information: The register 'fma_i/fma_i/inp_pipe_aux_q_reg[1]' will be removed. (OPT-1207)
+Information: The register 'fma_i/fma_i/inp_pipe_tag_q_reg[1]' will be removed. (OPT-1207)
+Information: The register 'fma_i/fma_i/inp_pipe_valid_q_reg[2]' will be removed. (OPT-1207)
+
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "FpFormat=3'h2,NumOperands=3". (HDL-193)
+Warning: Cannot find the design 'fpnew_classifier' in the library 'WORK'. (LBR-1)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "WIDTH=32'h00000019,MODE=1". (HDL-193)
+Warning: Cannot find the design 'lzc' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "AbsWidth=@28206b3a32373220743a20693a2028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a303030303030303520292028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a3030303030303061202920292000@". (HDL-193)
+Warning: Cannot find the design 'fpnew_rounding' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fpnew_classifier' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'lzc' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'fpnew_rounding' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Loaded alib file './alib-52/NanGate_15nm_OCL.db.alib'
+CPU Load: 0%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 183 GB, Tmp Disk Free: 61 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'
+Information: Added key list 'DesignWare' to design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (DDB-72)
+Information: The register 'inp_pipe_op_mod_q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inp_pipe_rnd_mode_q_reg[1][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inp_pipe_rnd_mode_q_reg[1][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inp_pipe_rnd_mode_q_reg[1][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'inp_pipe_op_mod_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: In design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1', the register 'inp_pipe_is_boxed_q_reg[1][1]' is removed because it is merged to 'inp_pipe_is_boxed_q_reg[1][0]'. (OPT-1215)
+Information: In design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1', the register 'inp_pipe_is_boxed_q_reg[1][2]' is removed because it is merged to 'inp_pipe_is_boxed_q_reg[1][0]'. (OPT-1215)
+ Implement Synthetic for 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'.
+  Processing 'sa_processing_element'
+  Processing 'adder_ideal_00000025_00000026'
+ Implement Synthetic for 'adder_ideal_00000025_00000026'.
+  Processing 'adder_generic_0_0_0_00000025_00000026'
+  Processing 'fma_wrapper_MUL_TYPE0_M_APPROX0_MM_APPROX0_ADD_TYPE0_A_APPROX0_AA_APPROX0_STAGES2_INTERMEDIATE_PIPELINE_STAGE1_ZERO_GATING_MULT0_FP_W16'
+  Processing 'multiplier_generic_0_0_0_0_0_0000000b_0000000b'
+  Processing 'multiplier_ideal_0_0_0000000b_0000000b_00000016'
+ Implement Synthetic for 'multiplier_ideal_0_0_0000000b_0000000b_00000016'.
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "FpFormat=3'h2,NumOperands=3". (HDL-193)
+Warning: Cannot find the design 'fpnew_classifier' in the library 'WORK'. (LBR-1)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "WIDTH=32'h00000019,MODE=1". (HDL-193)
+Warning: Cannot find the design 'lzc' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "AbsWidth=@28206b3a32373220743a20693a2028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a303030303030303520292028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a3030303030303061202920292000@". (HDL-193)
+Warning: Cannot find the design 'fpnew_rounding' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fpnew_classifier' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'lzc' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'fpnew_rounding' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+CPU Load: 0%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 183 GB, Tmp Disk Free: 61 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: In design 'sa_processing_element', the register 'fma_i/fma_i/inp_pipe_valid_q_reg[1]' is removed because it is merged to 'fma_i/fma_i/inp_pipe_is_boxed_q_reg[1][0]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1_RSOP_70'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'multiplier_ideal_0_0_0000000b_0000000b_00000016'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'adder_ideal_00000025_00000026'. (DDB-72)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01     853.7      0.00       0.0       1.0                           36921348.0000
+    0:00:01     849.7      0.00       0.0       0.0                           36695448.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02     771.3      0.00       0.0       0.0                           28332952.0000
+    0:00:02     771.3      0.00       0.0       0.0                           28332952.0000
+    0:00:02     771.3      0.00       0.0       0.0                           28332952.0000
+    0:00:02     771.3      0.00       0.0       0.0                           28332952.0000
+    0:00:02     771.0      0.00       0.0       0.0                           28331644.0000
+    0:00:02     771.0      0.00       0.0       0.0                           28331644.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           28262320.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.7      0.00       0.0       0.0                           27876702.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+    0:00:02     769.5      0.00       0.0       0.0                           27869000.0000
+CPU Load: 0%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 183 GB, Tmp Disk Free: 61 GB
+Loading db file '/home/csarch/workspace/MOSA_RTL/syn/pdk/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate_15nm_OCL.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "FpFormat=3'h2,NumOperands=3". (HDL-193)
+Warning: Cannot find the design 'fpnew_classifier' in the library 'WORK'. (LBR-1)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "WIDTH=32'h00000019,MODE=1". (HDL-193)
+Warning: Cannot find the design 'lzc' in the library 'WORK'. (LBR-1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1' with
+	the parameters "AbsWidth=@28206b3a32373220743a20693a2028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a303030303030303520292028206b3a31383220743a32393a22617272617928302533312530256c6f6769632925386667493162642220693a20683a33323a3030303030303061202920292000@". (HDL-193)
+Warning: Cannot find the design 'fpnew_rounding' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'fpnew_classifier' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'lzc' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Warning: Unable to resolve reference 'fpnew_rounding' in 'fpnew_fma_2_2_0__logic_Z_1yB___logic_Z_1yB__0_0_0_0_0_0_0_1'. (LINK-5)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+CPU Load: 0%, Ram Free: 0 GB, Swap Free: 15 GB, Work Disk Free: 183 GB, Tmp Disk Free: 61 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

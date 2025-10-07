@@ -1,30 +1,30 @@
 module fma_wrapper #(
-	parameter MUL_TYPE = 0,         
-	parameter M_APPROX = 0,
-	parameter MM_APPROX = 0,
-	parameter ADD_TYPE = 0,         
-	parameter A_APPROX = 0,       	
-	parameter AA_APPROX = 0,  
-	parameter STAGES = 0,
+    parameter MUL_TYPE = 0,         
+    parameter M_APPROX = 0,
+    parameter MM_APPROX = 0,
+    parameter ADD_TYPE = 0,         
+    parameter A_APPROX = 0,       	
+    parameter AA_APPROX = 0,  
+    parameter STAGES = 0,
     parameter INTERMEDIATE_PIPELINE_STAGE = 1,
     parameter ZERO_GATING_MULT = 1,
-	parameter FP_W = 16
+    parameter FP_W = 16
 )(
     // Clk, RST
-	input logic 				i_clk,
-	input logic					i_rstn,
+    input logic 				i_clk,
+    input logic					i_rstn,
 
-	// Data Inputs
+    // Data Inputs
     input  logic [FP_W-1:0]   	i_a,	// Activation operand
-	input  logic [FP_W-1:0]		i_b,	// Weight operand
-	input  logic [FP_W-1:0] 	i_c,	// MAC input
+    input  logic [FP_W-1:0]		i_b,	// Weight operand
+    input  logic [FP_W-1:0] 	i_c,	// MAC input
 	
-	// Control Inputs
-	input logic					i_msel,         // Adder Mux select signal (only if zero gating)
+    // Control Inputs
+    input logic					i_msel,         // Adder Mux select signal (only if zero gating)
     input logic					i_pipeline_en,  // Global pipeline enable (for stalls)
 
-	// Data Outputs
-	output  logic [FP_W-1:0]  	o_c 	// MAC output
+    // Data Outputs
+    output  logic [FP_W-1:0]  	o_c 	// MAC output
 );
 
 // ----------
@@ -32,7 +32,7 @@ module fma_wrapper #(
 // ----------
 
 // Parameters
-localparam fpnew_pkg::fp_format_e 	FpFormat = fpnew_pkg::fp_format_e'(2);
+localparam fpnew_pkg::fp_format_e 	FpFormat = fpnew_pkg::fp_format_e'(2); // FP16
 localparam int unsigned 			WIDTH = fpnew_pkg::fp_width(FpFormat); // do not change
 localparam fpnew_pkg::pipe_config_t PipeConfig = fpnew_pkg::BEFORE;
 

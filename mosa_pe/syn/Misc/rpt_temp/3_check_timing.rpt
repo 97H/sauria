@@ -1,0 +1,83 @@
+Warning: Design 'sa_processing_element' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating design information... (UID-85)
+Warning: Design 'sa_processing_element' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+fma_i/fma_i/inp_pipe_aux_q_reg[1]/synch_enable
+fma_i/fma_i/inp_pipe_is_boxed_q_reg[1][0]/synch_enable
+fma_i/fma_i/inp_pipe_is_boxed_q_reg[1][1]/synch_enable
+fma_i/fma_i/inp_pipe_is_boxed_q_reg[1][2]/synch_enable
+fma_i/fma_i/inp_pipe_op_mod_q_reg[1]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][0]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][1]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][2]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][3]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][4]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][5]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][6]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][7]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][8]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][9]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][10]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][11]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][12]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][13]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][14]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][0][15]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][0]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][1]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][2]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][3]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][4]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][5]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][6]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][7]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][8]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][9]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][10]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][11]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][12]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][13]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][14]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][1][15]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][0]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][1]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][2]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][3]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][4]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][5]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][6]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][7]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][8]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][9]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][10]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][11]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][12]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][13]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][14]/synch_enable
+fma_i/fma_i/inp_pipe_operands_q_reg[1][2][15]/synch_enable
+fma_i/fma_i/inp_pipe_rnd_mode_q_reg[1][0]/synch_enable
+fma_i/fma_i/inp_pipe_rnd_mode_q_reg[1][1]/synch_enable
+fma_i/fma_i/inp_pipe_rnd_mode_q_reg[1][2]/synch_enable
+fma_i/fma_i/inp_pipe_tag_q_reg[1]/synch_enable
+fma_i/fma_i/inp_pipe_valid_q_reg[1]/synch_enable
+fma_i/fma_i/inp_pipe_valid_q_reg[2]/synch_enable
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
